@@ -1,0 +1,98 @@
+<div
+  class="modal fade"
+  id="addNotiModal"
+  tabindex="-1"
+  aria-labelledby="addNotiModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="addNotiModalLabel">Thêm thông báo</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="title" class="form-label"
+              >Tiêu đề: <span class="text-danger fw-bold">*</span></label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              name="title"
+              placeholder="Nhập tiêu đề"
+            />
+          </div>
+          <div class="mb-3">
+            <div class="row">
+              <div class="col-6">
+                <label for="department" class="form-label"
+                  >Đơn vị: <span class="text-danger fw-bold">*</span></label
+                >
+                <select class="form-select" id="department">
+                  <option value="">Chọn đơn vị</option>
+                  <option value="1">Khoa Công Nghệ Thông Tin</option>
+                  <option value="2">Khoa Điện - Điện tử</option>
+                  <option value="3">Khoa Quản trị kinh doanh</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="topic" class="form-label"
+                  >Chủ đề: <span class="text-danger fw-bold">*</span></label
+                >
+                <select class="form-select" id="topic">
+                  <option value="">Chọn chủ đề</option>
+                  <option value="1">Bảo hiểm y tế</option>
+                  <option value="2">Học phí</option>
+                  <option value="3">Đăng ký môn học</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="content" class="form-label"
+              >Nội dung: <span class="text-danger fw-bold">*</span></label
+            >
+            <textarea
+              name="content"
+              class="form-control"
+              id="content"
+              placeholder="Nhập nội dung"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-check-label me-3" for="important">
+              Quan trọng:
+            </label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="0"
+              id="important"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-check-label me-3" for="status">
+              Hiển thị:
+            </label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="1"
+              id="status"
+              checked
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Thêm</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

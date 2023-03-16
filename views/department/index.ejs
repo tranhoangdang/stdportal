@@ -1,0 +1,51 @@
+<div class="d-flex justify-content-between pb-2 border-bottom mb-3">
+  <h3 class="fw-bold">Đơn vị</h3>
+  <button
+    type="button"
+    class="btn btn-sm btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#addDepartmentModal"
+  >
+    <i class="bi bi-plus-circle-fill me-2"></i> Thêm mới
+  </button>
+  <%- include('create') %>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Logo</th>
+      <th scope="col">Đơn vị</th>
+      <th scope="col">Trạng thái</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>
+        <img src="/images/logo.png" style="max-width: 100px" alt="" />
+      </td>
+      <td>Khoa Công nghệ thông tin</td>
+      <td>Đang hoạt động</td>
+      <td>
+        <div class="dropdown">
+          <i class="bi bi-three-dots-vertical" data-bs-toggle="dropdown"></i>
+
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item text-primary editTopicButton" href="#"
+                ><i class="bi bi-pencil-fill me-2"></i><span>Chỉnh sửa</span></a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item text-danger" href="#"
+                ><i class="bi bi-trash-fill me-2"></i><span>Xóa</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

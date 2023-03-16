@@ -1,0 +1,66 @@
+<div
+  class="modal fade"
+  id="addDepartmentModal"
+  tabindex="-1"
+  aria-labelledby="addDepartmentModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="addDepartmentModalLabel">Thêm đơn vị</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Tên: <span class="text-danger fw-bold">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Khoa Công nghệ thông tin"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="image" class="form-label">Ảnh: <span class="text-danger fw-bold">*</span></label>
+            <label for="image">
+              <img
+                src="/images/default-image.png"
+                class="img-fluid"
+                alt=""
+                id="frame"
+              />
+            </label>
+            <input
+              type="file"
+              name="image"
+              id="image"
+              accept="image/*"
+              onchange="preview(event)"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-check-label me-3" for="status">
+              Trạng thái:
+            </label>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="1"
+              id="status"
+              checked
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Thêm</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

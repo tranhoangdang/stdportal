@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bitter", serif;
+}
+
+#image {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.login-form {
+  margin-top: 150px;
+}
